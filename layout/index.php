@@ -30,7 +30,7 @@
  * custom js files
  */
 ?>
-    <script rel="script" src="../assets/js/index.js"></script>
+
 
 </head>
 <body>
@@ -44,7 +44,7 @@
                 <h3>Welcome back Admin</h3>
             </div>
             <div class="form-text">
-            <form action="#" method="post">
+            <form action="dashboard.php" method="post">
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                     <input id="user" type="text" class="form-control" name="email" placeholder="Email">
@@ -52,7 +52,7 @@
                 <div class="input-group">
                     <span class="input-group-addon"><i class="glyphicon glyphicon-asterisk"></i></span>
                     <input id="password" type="password" class="form-control" name="password" placeholder="Password">
-                    <span class="input-group-addon" onclick="seePass()"><i class="glyphicon glyphicon-eye-close"></i></span>
+                    <span class="input-group-addon" onclick="seePass()"><i class="glyphicon glyphicon-eye-open"></i></span>
                 </div>
                 <button class="btn info" type="submit">Login</button>
                 <button class="btn default" stype="reset">Reset</button>
@@ -61,5 +61,9 @@
             </div>
         </div>
     </div>
+
+    <script src="//code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="../assets/js/index.js"></script>
+
 </body>
 </html>
